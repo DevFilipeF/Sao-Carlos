@@ -47,16 +47,16 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import AIgreja from './pages/AIgreja';
-import Contato from './pages/Contato';
-import Cultos from './pages/Cultos';
-import Eventos from './pages/Eventos';
-import Home from './pages/Home';
-import Ministerios from './pages/Ministerios';
-import Oracao from './pages/Oracao';
-import QuemSomos from './pages/QuemSomos';
-import Sermoes from './pages/Sermoes';
-import Sobre from './pages/Sobre';
+import AIgreja from './pages/AIgreja.jsx';
+import Contato from './pages/Contato.jsx';
+import Cultos from './pages/Cultos.jsx';
+import Eventos from './pages/Eventos.jsx';
+import Home from './pages/Home.jsx';
+import Ministerios from './pages/Ministerios.jsx';
+import Oracao from './pages/Oracao.jsx';
+import QuemSomos from './pages/QuemSomos.jsx';
+import Sermoes from './pages/Sermoes.jsx';
+import Sobre from './pages/Sobre.jsx';
 import __Layout from './Layout.jsx';
 
 
