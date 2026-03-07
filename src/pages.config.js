@@ -47,7 +47,7 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import AIgreja from "./pages/AIgreja.jsx";
+import Igreja from "./pages/igreja.jsx";
 import Contato from './pages/Contato.jsx';
 import Cultos from './pages/Cultos.jsx';
 import Eventos from './pages/Eventos.jsx';
@@ -61,7 +61,7 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "AIgreja": AIgreja,
+    "Igreja": Igreja,
     "Contato": Contato,
     "Cultos": Cultos,
     "Eventos": Eventos,
