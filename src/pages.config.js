@@ -47,7 +47,7 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import AIgreja from './pages/AIgreja.jsx';
+import AIgreja from "./pages/AIgreja.jsx";
 import Contato from './pages/Contato.jsx';
 import Cultos from './pages/Cultos.jsx';
 import Eventos from './pages/Eventos.jsx';
