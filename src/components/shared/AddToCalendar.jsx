@@ -4,11 +4,11 @@ import { CalendarPlus, ChevronDown } from "lucide-react";
 
 function buildGoogleUrl(evento) {
   const base = "https://www.google.com/calendar/render?action=TEMPLATE";
-  const datePart = evento.data.replace(/-/g, "");
+  const datePart = evento.data.toISOString().slice(0,10).replace(/-/g,"");
 
   let dates;
   if (evento.horario) {
-    const match = evento.horario.match(/(\d{1,2})h(\d{0,2})/);
+    const match = evento.horario.match(/(\d{1,2}):(\d{2})/);
     if (match) {
       const h = String(match[1]).padStart(2, "0");
       const m = String(match[2] || "00").padStart(2, "0");
@@ -41,7 +41,7 @@ function buildOutlookUrl(evento) {
   let enddt = `${datePart}T10:00:00`;
 
   if (evento.horario) {
-    const match = evento.horario.match(/(\d{1,2})h(\d{0,2})/);
+    const match = evento.horario.match(/(\d{1,2}):(\d{2})/);
     if (match) {
       const h = String(match[1]).padStart(2, "0");
       const m = String(match[2] || "00").padStart(2, "0");
@@ -71,7 +71,7 @@ function buildICS(evento) {
   let allDay = true;
 
   if (evento.horario) {
-    const match = evento.horario.match(/(\d{1,2})h(\d{0,2})/);
+    const match = evento.horario.match(/(\d{1,2}):(\d{2})/);
     if (match) {
       const h = String(match[1]).padStart(2, "0");
       const m = String(match[2] || "00").padStart(2, "0");
