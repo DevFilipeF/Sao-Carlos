@@ -9,7 +9,7 @@ const LOGO_URL = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/pub
 
 const navLinks = [
   { label: "Início", page: "Home" },
-  { label: "A Igreja", page: "AIgreja" },
+  { label: "A Igreja", page: "Igreja" },
   { label: "Cultos & Eventos", page: "Eventos" },
   { label: "Ministérios", page: "Ministerios" },
   { label: "Sermões", page: "Sermoes" },
