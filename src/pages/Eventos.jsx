@@ -31,7 +31,7 @@ useEffect(() => {
           const [dia, data, horario, nome, descricao] = linha.split(";");
 
           const partesData = data.split("/");
-          const dataISO = `${partesData[2]}-${partesData[1]}-${partesData[0]}`;
+          const dataISO = `${partesData[2]}-${partesData[1]}-${partesData[0]}T12:00:00`;
 
           return {
             id: index + 1,
@@ -52,6 +52,7 @@ useEffect(() => {
 }, []);
 
   const hoje = new Date();
+  hoje.setHours(0, 0, 0, 0);
   const proximos = eventos
     .filter((e) => new Date(e.data) >= hoje)
     .sort(
