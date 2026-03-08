@@ -29,10 +29,9 @@ useEffect(() => {
         .map((linha, index) => {
 
           const [dia, data, horario, nome, descricao] = linha.split(";");
-
-          const partesData = data.split("/");
-          const dataISO = `${partesData[2]}-${partesData[1]}-${partesData[0]}T12:00:00`;
-
+        
+          const dataISO = new Date(`${data}T${horario}`);
+        
           return {
             id: index + 1,
             titulo: nome,
