@@ -32,7 +32,7 @@ export default function Cultos() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("./Agendas/cultos.csv")
+    fetch("/cultos.csv")
       .then((res) => res.text())
       .then((text) => {
         const linhas = text.split("\n").slice(1);
