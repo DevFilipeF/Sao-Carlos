@@ -25,7 +25,7 @@ const lideranca = [
   },
 ];
 
-export default function AIgreja() {
+export default function Igreja() {
   return (
     <div>
       {/* Hero */}

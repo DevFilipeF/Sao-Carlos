@@ -61,20 +61,20 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Igreja": Igreja,
-    "Contato": Contato,
-    "Cultos": Cultos,
-    "Eventos": Eventos,
-    "Home": Home,
-    "Ministerios": Ministerios,
-    "Oracao": Oracao,
-    "QuemSomos": QuemSomos,
-    "Sermoes": Sermoes,
-    "Sobre": Sobre,
+    "igreja": Igreja,
+    "contato": Contato,
+    "cultos": Cultos,
+    "eventos": Eventos,
+    "home": Home,
+    "ministerios": Ministerios,
+    "oracao": Oracao,
+    "quemsomos": QuemSomos,
+    "sermoes": Sermoes,
+    "sobre": Sobre,
 }
 
 export const pagesConfig = {
-    mainPage: "Home",
+    mainPage: "home",
     Pages: PAGES,
     Layout: __Layout,
 };
