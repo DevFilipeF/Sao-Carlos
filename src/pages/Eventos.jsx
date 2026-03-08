@@ -18,7 +18,7 @@ export default function Eventos() {
 const [isLoading, setIsLoading] = useState(true);
 
 useEffect(() => {
-  fetch("/Agendas/cultos.csv")
+  fetch("/cultos.csv")
     .then((res) => res.text())
     .then((text) => {
 
